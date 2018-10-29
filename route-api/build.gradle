@@ -1,5 +1,13 @@
 apply plugin: 'com.android.library'
 
+ext {
+    bintrayName = 'android-url-route'
+    artifact = bintrayName
+    libraryName = 'android-url-route'
+    libraryDescription = 'A router for android'
+    libraryVersion = arouter_api_version
+}
+
 android {
     compileSdkVersion 28
 
@@ -31,3 +39,6 @@ dependencies {
     annotationProcessor project(':route-complier')
     api project(':route-annotation')
 }
+
+apply from: '../bintray.gradle'
+apply from: '../install.gradle'

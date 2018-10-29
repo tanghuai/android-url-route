@@ -1,1 +1,1 @@
-include ':app', ':route-annotation', ':route-complier', ':route-api'
+include ':demo', ':route-annotation', ':route-complier', ':route-api'
